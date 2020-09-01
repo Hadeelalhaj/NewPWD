@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HHJ Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&display=swap');
+  </style>
+</head>
+
+<body class="hhj-project-detail-page grid">
+  <div class="hhj-content-wrapper">
+    <!-- Menu bar -->
+    <header class="hhj-main-nav">
+      <a href="index.html" class="hhj-logo"></a>
+      <nav id="menu">
+        <ul class="hhj-list-wrapper">
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a> </li>
+        </ul>
+      </nav>
+      <nav class="menu-mobile">
+        <button id="menu-mobile-btn" class="menu-mobile-btn">  
+          <img src="assets/hadeel-burger-menu-icon.svg" alt="menu icon">
+        </button>
+        <ul id="menu-list" class="menu-mobile-list-off">
+          <li><a href="projects.html" id="projects-link">Projects</a></li>
+          <li><a href="resume.html" id="resume-link">Resume</a></li>
+          <li><a href="contact.html" id="contact-link">Contact</a> </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="resume">
+      <section class="hhj-project-info-wrapper">
+        <article class="hhj-project-text hhj-project-name hhj-magis-project-name">
+          <div class="hhj-div-text-wrapper div-text-special hhj-magis-textwrapper">
+            <h1>Resume</h1>
+            <h2 class="hhj-fixed-tittle">UX / UI designer</h2>
+            <p class="hhj-project-briefe">Nothing is impossible! there are ways that lead to everything.</p>
+          </div>  
+          <!-- <img class="hhj-home-video hhj-portret" src="assets/hadeel-portfolio-portret.png" alt="hhj-portrait"> -->
+        </article>
+      </section>
+
+      <section class="hhj-project-reserch">
+        <article class="hhj-user-persona-wrapper ">
+
+          <div class="hhj-persona-study-points hhj-div-text-wrapper">
+            <h3 class="hhj-user-types-title ">MY EDUCATION</h3>
+            <p>2019 - 2020</p> 
+            <h4>Masters Degree in Web & Digital Design</h4>
+            <p>SPD : Scuola Di Politica De design “UILM”</p>
+            <p><img class="hhj-location" src="assets/maps-and-location.svg" alt="location">Milano, Italy</p>
+            
+          </div>
+
+          <div class="hhj-persona-study-points hhj-div-text-wrapper">
+            <p>2007 - 2011</p> 
+            <h4>Bachelor Degree in Interior Design</h4>
+            <p>Al-Ahliya University of Amman</p>
+            <p><img class="hhj-location" src="assets/maps-and-location.svg" alt="location">Amman, Jordan</p>
+            
+          </div>
+        </article>
+      </section>
+      <div class="hhj-pink-line"></div>
+
+      <section class="hhj-project-reserch">
+        <article class="hhj-user-persona-wrapper ">
+
+          <div class="hhj-persona-study-points hhj-div-text-wrapper">
+            <h3 class="hhj-user-types-title ">MY EXPERIENCE</h3>
+            <p>Present</p> 
+            <h4>Graphic Designer</h4>
+            <p>Working on social media ads and graphic services “ logo, digital ads branding ect ...</p>
+          </div>
+
+          <div class="hhj-persona-study-points hhj-div-text-wrapper">
+            <p>2015 - 2019</p> 
+            <h4>Graphic Designer</h4>
+            <p>ADZVISOR- Digital advertising agency</p>
+            <p>Working on social media and Rich media advertisements using
+            celtra platform. Digital advertisments “ Google banners”.
+            Branding and infographcs.</p>
+            
+          </div>
+
+          <div class="hhj-persona-study-points hhj-div-text-wrapper">
+            <p>2012 - 2015</p> 
+            <h4>Interior Designer</h4>
+            <p>ADZVISOR- Digital advertising agency</p>
+            <p>Node -Project & Construction Management.
+            Working on interior projects using Autocad and 3ds Max.
+            Exhibition booth design from scratch with detail drawing.
+            Most of the designs “ Apartment furniture - Oce design”</p>
+          </div>
+        </article>
+      </section>
+
+      <aside>
+        <div class="aside-wrapper">
+         
+          <div class="hhj-persona-study-points hhj-div-text-wrapper">
+            <h4>work</h4>
+            <p>Cooperation</p>
+            <img class="hhj-level" src="assets/Web & app.svg" alt="level">
+            <p>Communication</p>
+            <img class="hhj-level" src="assets/good.svg" alt="level">
+            <p>Time management</p>
+            <img class="hhj-level" src="assets/Web & app.svg" alt="level">
+          </div>
+          <div class="hhj-persona-study-points hhj-div-text-wrapper">
+            <h4>Design</h4>
+            <p>Ui - Ux</p>
+            <p>Branding</p>
+            <p>Web & App</p>
+          </div>
+        
+        
+          <div class="hhj-persona-study-points hhj-div-text-wrapper">
+            <h4>Programs</h4>
+            <p>Ae - Ai - Id</p>
+            <p>Psd - Xd - sketch</p>
+          </div>
+          <div class="hhj-persona-study-points hhj-div-text-wrapper">
+            <h4>Coding</h4>
+            <p>< HTML ></p>
+            <p>{ CSS }</p>
+            <p>( JS )</p>
+          </div>
+         
+        </div>
+      
+      </aside>
+
+    </main>
+  </div>
+  <script>
+    var menuBtn = document.getElementById("menu-mobile-btn");
+    var menuList = document.getElementById("menu-list");
+
+    menuBtn.addEventListener("click", openMenu);
+    function openMenu() {
+      menuList.classList.toggle("menu-mobile-list-on")
+    }
+
+    var homeLink = document.getElementById("home-link");
+    homeLink.addEventListener("click", closeMenu);
+    function closeMenu() {
+      menuList.classList.toggle("menu-mobile-list-on")
+    }
+    var projectsLink = document.getElementById("projects-link");
+    projectsLink.addEventListener("click", closeMenu);
+    function closeMenu() {
+      menuList.classList.toggle("menu-mobile-list-on")
+    }
+    var resumeLink = document.getElementById("resume-link");
+    resumeLink.addEventListener("click", closeMenu);
+    function closeMenu() {
+      menuList.classList.toggle("menu-mobile-list-on")
+    }
+    var contactLink = document.getElementById("contact-link");
+    contactLink.addEventListener("click", closeMenu);
+    function closeMenu() {
+      menuList.classList.toggle("menu-mobile-list-on")
+    }
+  </script>
+
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+ 
+</body>
+</html>
